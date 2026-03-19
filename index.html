@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Docker Containerization Assignment</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 20px; background: #0d1117; color: #c9d1d9; }
+    h1 { color: #58a6ff; }
+    h2 { color: #79c0ff; border-bottom: 1px solid #30363d; padding-bottom: 8px; }
+    pre { background: #161b22; padding: 15px; border-radius: 8px; overflow-x: auto; }
+    a { color: #58a6ff; }
+    ul { line-height: 2; }
+    footer { margin-top: 40px; text-align: center; color: #8b949e; }
+  </style>
+</head>
+<body>
+
+  <h1>🐳 Docker Containerization Assignment</h1>
+  <p>Containerized Web Application using Docker &amp; PostgreSQL</p>
+
+  <p><strong>Name:</strong> Krishna Maurya</p>
+  <p><strong>SAP ID:</strong>500120521</p>
+  <p><strong>Branch:</strong> B.Tech CSE (CCVT)</p>
+
+  <h2>📌 Project Components</h2>
+  <ul>
+    <li>Backend: Node.js + Express</li>
+    <li>Database: PostgreSQL</li>
+    <li>Containerization: Docker</li>
+    <li>Orchestration: Docker Compose</li>
+    <li>Networking: Ipvlan / Macvlan</li>
+  </ul>
+
+  <h2>🔗 GitHub Repository</h2>
+  <a href="https://github.com/Krish374566/Containerization-and-devops">View Assignment Files</a>
+
+  <h2>📥 Input</h2>
+  <p><strong>POST Request:</strong></p>
+  <pre>POST /record
+{
+  "data": "Sample Value"
+}</pre>
+
+  <p><strong>Docker Commands:</strong></p>
+  <pre>docker compose up --build -d
+docker compose down</pre>
+
+  <p><strong>Environment Variables:</strong></p>
+  <ul>
+    <li>DB_NAME</li>
+    <li>DB_USER</li>
+    <li>DB_PASSWORD</li>
+  </ul>
+
+  <h2>📤 Output</h2>
+  <p><strong>API Response:</strong></p>
+  <pre>{ "message": "Record inserted successfully" }</pre>
+
+  <p><strong>Fetch Records:</strong></p>
+  <pre>[{ "id": 1, "data": "Sample Value" }]</pre>
+
+  <p><strong>Health Check:</strong></p>
+  <pre>{ "status": "ok" }</pre>
+
+  <p><strong>Persistence:</strong></p>
+  <pre>Data remains after docker compose down and up</pre>
+
+  <h2>📊 Conclusion</h2>
+  <p>This project demonstrates containerization of a multi-service application using Docker.
+  It includes networking, data persistence, and efficient image optimization using multi-stage builds.</p>
+
+  <footer>© 2026 Krishna | Krish374566</footer>
+
+</body>
+</html>
